@@ -1,63 +1,93 @@
 🏏 IPL Score Predictor
 🚀 Project Overview
-The IPL Score Predictor is an AI-powered system designed to predict the total score of a team in an IPL match based on real match details like venue, teams, and players. Built using deep learning, this project blends cricket insights with smart technology to deliver meaningful predictions for fans, analysts, and developers.
+The IPL Score Predictor is an AI-based project designed to predict the total score of a team in an IPL match. It analyzes match data such as venue, batting team, bowling team, striker, and bowler to estimate the score. Built using deep learning, the model uses a trained neural network and offers a simple interface for real-time predictions.
 
-🌟 Key Features
-🧹 Data Preprocessing: Cleaned match data, handled missing values, encoded teams and players, and scaled features using MinMaxScaler.
+🌟 Features
+🔹 Data Preprocessing
+Handled missing values and cleaned the dataset.
 
-🧠 Model Training: Built a Neural Network using dense layers, ReLU activations, Huber Loss, and Adam Optimizer.
+Encoded categorical variables like teams and players.
 
-🎯 Evaluation Metrics: Measured accuracy using MAE, MSE, and R² Score.
+Applied MinMaxScaler to normalize the feature set.
 
-🧩 Interactive UI: Developed a user-friendly prediction tool with ipywidgets to input match conditions and get live score predictions.
+🔸 Model Training
+Designed and trained a Neural Network model.
+
+Used Dense Layers with ReLU activation.
+
+Implemented Huber Loss and Adam Optimizer for better performance.
+
+🔹 Interactive Prediction Interface
+Developed using ipywidgets.
+
+Allows users to input match details and get predicted scores instantly.
+
+🔸 Model Evaluation
+Evaluated model performance using:
+
+Mean Absolute Error (MAE): 11.71
+
+Mean Squared Error (MSE): 330.16
+
+R² Score: 60.8%
 
 📊 Dataset
-Trained the model using historical IPL match data including:
+The model was trained using historical IPL match data containing the following features:
 
 Match venue
 
-Batting and bowling teams
+Batting team
 
-Striker and bowler names
+Bowling team
 
-Final team score
+Striker
+
+Bowler
+
+Final score of the batting team
 
 🧠 AI Techniques
-🏗️ Neural Network (NN) with dense layers to capture complex relationships
+🏗️ Neural Network Architecture
+Multiple dense layers for capturing complex data relationships.
 
-📉 Huber Loss for handling outliers smoothly
+ReLU activation function in hidden layers.
 
-⚙️ Adam Optimizer for efficient training
+📉 Loss & Optimization
+Used Huber Loss to handle outliers effectively.
 
-🛠 Tools & Technologies
+Trained with Adam Optimizer for efficient learning.
+
+🛠 Tech Stack & Tools
 
 Category	Technologies Used
 Programming	Python
 Libraries	Pandas, NumPy, Scikit-learn, TensorFlow/Keras, ipywidgets
-Platform	Google Colab, VS Code
-📈 Model Performance
-📏 Mean Absolute Error (MAE): 11.71
+Platform	Google Colab, Visual Studio Code
+🔥 Challenges Overcome
+Model Optimization: Tuned hyperparameters to improve accuracy and reduce prediction error.
 
-📐 Mean Squared Error (MSE): 330.16
+Interface Integration: Successfully linked the trained model with an interactive input tool using ipywidgets.
 
-📊 R² Score: 60.8%
+📈 Roadmap & Future Scope
+🏆 Expand prediction support for other leagues like PSL.
+
+🌦️ Include weather and pitch conditions for more accurate forecasts.
+
+📱 Enhance the user interface for broader accessibility and better user experience.
 
 👨‍💻 Team Members
-M Attaullah (Leader) – Designed the neural network, led the project, and handled model evaluation
+M Attaullah (Leader) – Designed and trained the model, led the project, and evaluated model performance.
 
-M Haris Nisar – Collected and preprocessed data, performed EDA
+M Haris Nisar – Collected and cleaned data, performed preprocessing and analysis.
 
-Abdul Rehman – Trained and tuned the model, evaluated performance
+Abdul Rehman – Focused on model tuning, evaluation, and testing.
 
-M Muqaddas Ali – Developed the prediction interface using ipywidgets
+M Muqaddas Ali – Developed the interactive user interface using ipywidgets.
 
-📌 Future Enhancements
-🏆 Add support for other leagues like PSL
+🤝 Get in Touch!
+Passionate about AI, Cricket, and data-driven solutions? Let’s connect and share ideas!
 
-🌦️ Include pitch and weather conditions for higher accuracy
+M-Attaullah
 
-💡 Improve and extend the UI experience
+Muhammad Attaullah
 
-🔗 Connect with Me
-GitHub: M-Attaullah
-LinkedIn: Muhammad Attaullah

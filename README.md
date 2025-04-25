@@ -1,93 +1,83 @@
-🏏 IPL Score Predictor
-🚀 Project Overview
-The IPL Score Predictor is an AI-based project designed to predict the total score of a team in an IPL match. It analyzes match data such as venue, batting team, bowling team, striker, and bowler to estimate the score. Built using deep learning, the model uses a trained neural network and offers a simple interface for real-time predictions.
+# 🏏 IPL Score Predictor
 
-🌟 Features
-🔹 Data Preprocessing
-Handled missing values and cleaned the dataset.
+## 🚀 Project Overview
+The **IPL Score Predictor** is an AI-powered system designed to predict the total score of a team in an IPL match. It analyzes match details such as venue, batting/bowling teams, striker, and bowler. Built using deep learning, this model leverages a neural network for accurate predictions and provides a user-friendly interface for real-time forecasting.
 
-Encoded categorical variables like teams and players.
+---
 
-Applied MinMaxScaler to normalize the feature set.
+## 🌟 Features
 
-🔸 Model Training
-Designed and trained a Neural Network model.
+### 🔹 **Data Preprocessing**
+- Cleaned historical IPL match data.
+- Handled missing values and encoded categorical variables.
+- Scaled numerical features using `MinMaxScaler`.
 
-Used Dense Layers with ReLU activation.
+### 🔸 **Model Training**
+- Designed a **Neural Network** with multiple dense layers.
+- Used **ReLU activation**, **Huber Loss**, and **Adam Optimizer**.
+- Tuned hyperparameters for optimal performance.
 
-Implemented Huber Loss and Adam Optimizer for better performance.
+### 🔹 **Interactive Prediction Tool**
+- Built a live prediction interface using `ipywidgets`.
+- Users can input match details (venue, teams, players) and get real-time score predictions.
 
-🔹 Interactive Prediction Interface
-Developed using ipywidgets.
+### 🔸 **Model Evaluation**
+- **Mean Absolute Error (MAE):** 11.71  
+- **Mean Squared Error (MSE):** 330.16  
+- **R² Score:** 60.8%  
 
-Allows users to input match details and get predicted scores instantly.
+---
 
-🔸 Model Evaluation
-Evaluated model performance using:
+## 🏗️ System Architecture
 
-Mean Absolute Error (MAE): 11.71
+### 💻 **Model Workflow**
+1. **Data Exploration:** Analyzed IPL datasets for feature engineering.  
+2. **Preprocessing:** Label encoding, scaling, and train-test splitting.  
+3. **Training:** Developed and fine-tuned the neural network.  
+4. **Deployment:** Integrated the model into an interactive tool.  
 
-Mean Squared Error (MSE): 330.16
+### 🔧 **AI Techniques**
+- **Deep Learning:** Dense layers with dropout for regularization.  
+- **Loss Function:** Huber Loss to handle outliers.  
+- **Optimization:** Adam for efficient convergence.  
 
-R² Score: 60.8%
+### 🛠 **Tech Stack & Tools**
+| **Category**       | **Technologies Used**                          |
+|--------------------|-----------------------------------------------|
+| **Programming**    | Python                                        |
+| **Libraries**      | Pandas, NumPy, Scikit-learn, TensorFlow/Keras |
+| **UI**             | ipywidgets                                    |
+| **Platform**       | Google Colab, VS Code                         |
 
-📊 Dataset
-The model was trained using historical IPL match data containing the following features:
+---
 
-Match venue
+## 🔥 Challenges Overcome
+- **Accuracy Improvement:** Achieved a balance between bias and variance through hyperparameter tuning.  
+- **Real-Time Prediction:** Seamlessly connected the trained model to an interactive UI for dynamic inputs.  
 
-Batting team
+---
 
-Bowling team
+## 📈 Roadmap & Future Scope
+- **🌍 Multi-League Support:** Extend predictions to PSL, BBL, etc.  
+- **🌦️ Context-Aware Features:** Incorporate weather/pitch conditions.  
+- **📱 Responsive UI:** Develop a web/mobile app for broader accessibility.  
 
-Striker
+---
 
-Bowler
+## 👨‍💻 Team Members
+| **Role**               | **Contributions**                              |
+|------------------------|-----------------------------------------------|
+| **M Attaullah (Lead)** | Designed NN, led project, evaluated metrics.  |
+| **M Haris Nisar**      | Data collection, preprocessing, and EDA.      |
+| **Abdul Rehman**       | Model training, tuning, and testing.          |
+| **M Muqaddas Ali**     | Developed interactive prediction interface.   |
 
-Final score of the batting team
+---
 
-🧠 AI Techniques
-🏗️ Neural Network Architecture
-Multiple dense layers for capturing complex data relationships.
+## 🤝 Get in Touch!
+Passionate about AI, cricket, and problem-solving? Let’s collaborate!  
 
-ReLU activation function in hidden layers.
+[![GitHub](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white)](https://github.com/M-Attaullah) [**M-Attaullah**](https://github.com/M-Attaullah)  
 
-📉 Loss & Optimization
-Used Huber Loss to handle outliers effectively.
-
-Trained with Adam Optimizer for efficient learning.
-
-🛠 Tech Stack & Tools
-
-Category	Technologies Used
-Programming	Python
-Libraries	Pandas, NumPy, Scikit-learn, TensorFlow/Keras, ipywidgets
-Platform	Google Colab, Visual Studio Code
-🔥 Challenges Overcome
-Model Optimization: Tuned hyperparameters to improve accuracy and reduce prediction error.
-
-Interface Integration: Successfully linked the trained model with an interactive input tool using ipywidgets.
-
-📈 Roadmap & Future Scope
-🏆 Expand prediction support for other leagues like PSL.
-
-🌦️ Include weather and pitch conditions for more accurate forecasts.
-
-📱 Enhance the user interface for broader accessibility and better user experience.
-
-👨‍💻 Team Members
-M Attaullah (Leader) – Designed and trained the model, led the project, and evaluated model performance.
-
-M Haris Nisar – Collected and cleaned data, performed preprocessing and analysis.
-
-Abdul Rehman – Focused on model tuning, evaluation, and testing.
-
-M Muqaddas Ali – Developed the interactive user interface using ipywidgets.
-
-🤝 Get in Touch!
-Passionate about AI, Cricket, and data-driven solutions? Let’s connect and share ideas!
-
-M-Attaullah
-
-Muhammad Attaullah
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-attaullah-705764333/) [**Muhammad Attaullah**](https://www.linkedin.com/in/muhammad-attaullah-705764333/)  
 
